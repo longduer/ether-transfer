@@ -1,0 +1,44 @@
+
+192.168.23.164
+docker image rm gcc2ge/ionchain:v5
+docker run --name vm30301 -d   -v /usr/local/ionc/keystore:/root/.ethereum/keystore -v /usr/local/ionc/passwd:/root/.ethereum/passwd --network=host gcc2ge/ionchain:v5 --rpc --rpcaddr=0.0.0.0 --rpcport 8545 --port 30301 --unlock 0x5a211c7e5aedb31c2195d32c477d1f835103e927 --password /root/.ethereum/passwd --etherbase 0x5a211c7e5aedb31c2195d32c477d1f835103e927 --mine
+
+docker run --name vm30302 -d   -v /usr/local/ionc/keystore:/root/.ethereum/keystore -v /usr/local/ionc/passwd:/root/.ethereum/passwd --network=host gcc2ge/ionchain:v5 --port 30302 --unlock 0xb0ddb82c112bc898d95a506690fc85abeac125f3 --password /root/.ethereum/passwd --etherbase 0xb0ddb82c112bc898d95a506690fc85abeac125f3 --mine
+
+docker run --name vm30303 -d   -v /usr/local/ionc/keystore:/root/.ethereum/keystore -v /usr/local/ionc/passwd:/root/.ethereum/passwd --network=host gcc2ge/ionchain:v5 --port 30303 --unlock 0x1ae861cdadf036c4982f4ee1355ea51261dee981 --password /root/.ethereum/passwd --etherbase 0x1ae861cdadf036c4982f4ee1355ea51261dee981 --mine
+
+172.16.10.81
+docker image rm gcc2ge/ionchain:v5
+
+docker run --name vm30304 -d   -v /usr/local/ionc/keystore:/root/.ethereum/keystore -v /usr/local/ionc/passwd:/root/.ethereum/passwd --network=host gcc2ge/ionchain:v5 --port 30304 --unlock 0x41a1d899fb0ed0d71075a93fad6e6bc68fb3c046 --password /root/.ethereum/passwd --etherbase 0x41a1d899fb0ed0d71075a93fad6e6bc68fb3c046 --mine
+
+docker run --name vm30305 -d   -v /usr/local/ionc/keystore:/root/.ethereum/keystore -v /usr/local/ionc/passwd:/root/.ethereum/passwd --network=host gcc2ge/ionchain:v5 --port 30305 --unlock 0xaa8f398a08bb8666a79fb549cbcd4aac51b27b16 --password /root/.ethereum/passwd --etherbase 0xaa8f398a08bb8666a79fb549cbcd4aac51b27b16 --mine
+
+docker run --name vm30306 -d   -v /usr/local/ionc/keystore:/root/.ethereum/keystore -v /usr/local/ionc/passwd:/root/.ethereum/passwd --network=host gcc2ge/ionchain:v5 --port 30306 --unlock 0xb7f295d3b0925c2fd8448744290cdccd30fbde98 --password /root/.ethereum/passwd --etherbase 0xb7f295d3b0925c2fd8448744290cdccd30fbde98 --mine
+
+
+172.16.10.82
+
+docker image rm gcc2ge/ionchain:v5
+
+docker run --name vm30307 -d   -v /usr/local/ionc/keystore:/root/.ethereum/keystore -v /usr/local/ionc/passwd:/root/.ethereum/passwd --network=host gcc2ge/ionchain:v5 --port 30307 --unlock 0xecf12ec50a815c7941e6b621931bd149f4d3aeff --password /root/.ethereum/passwd --etherbase 0xecf12ec50a815c7941e6b621931bd149f4d3aeff --mine
+
+docker run --name vm30308 -d   -v /usr/local/ionc/keystore:/root/.ethereum/keystore -v /usr/local/ionc/passwd:/root/.ethereum/passwd --network=host gcc2ge/ionchain:v5 --port 30308 --unlock 0x814da63e20e04b3e0c28a0baabf1585364a0fde5 --password /root/.ethereum/passwd --etherbase 0x814da63e20e04b3e0c28a0baabf1585364a0fde5 --mine
+
+docker run --name vm30309 -d   -v /usr/local/ionc/keystore:/root/.ethereum/keystore -v /usr/local/ionc/passwd:/root/.ethereum/passwd --network=host gcc2ge/ionchain:v5 --port 30309 --unlock 0x0ca0943a8c11f261825e37d3a459d92ef049e58d --password /root/.ethereum/passwd --etherbase 0x0ca0943a8c11f261825e37d3a459d92ef049e58d --mine
+
+
+
+172.16.10.83
+
+
+docker stop $(docker ps -a -q)
+
+docker rm $(docker ps -a -q)
+
+docker run --name vm30320 -d --rm -v /usr/local/ionc/keystore:/root/.ethereum/keystore -v /usr/local/ionc/passwd:/root/.ethereum/passwd --network=host gcc2ge/ionchain:v5 --port 30320 --unlock 0x223b2df20b5f1b4a3a3b931af4ca57e255a897cd --password /root/.ethereum/passwd --etherbase 0x223b2df20b5f1b4a3a3b931af4ca57e255a897cd --mine
+
+docker run --name vm30326 -d --rm -v /usr/local/ionc/keystore:/root/.ethereum/keystore -v /usr/local/ionc/passwd:/root/.ethereum/passwd --network=host gcc2ge/ionchain:v5 --port 30326 --unlock 0x7a261075c737163ae2525f271717f3dbf5450b8c --password /root/.ethereum/passwd --etherbase 0x7a261075c737163ae2525f271717f3dbf5450b8c --mine
+
+docker run --name vm30329 -d --rm -v /usr/local/ionc/keystore:/root/.ethereum/keystore -v /usr/local/ionc/passwd:/root/.ethereum/passwd --network=host gcc2ge/ionchain:v5 --port 30329 --unlock 0xb161119d490a1d2aedfa78f54ec31f72b1408896 --password /root/.ethereum/passwd --etherbase 0xb161119d490a1d2aedfa78f54ec31f72b1408896 --mine
+
